@@ -1,0 +1,17 @@
+{% extends "fourth_task/menu.html" %}
+
+{% block pagename %}
+    <h1>Лекарства и снадобья</h1>
+{% endblock %}
+
+{% block menu %}
+    {{ block.super }}
+{% endblock %}
+
+{% block content %}
+    <ul>
+        {% for item, description in herbs %}
+            <li><descr title="{{description}}">{{item}} </descr><button>Съесть</button></li>
+        {% endfor %}
+    </ul>
+{% endblock %}

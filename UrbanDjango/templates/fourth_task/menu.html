@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Parent</title>
+</head>
+<body>
+    <pagename>
+        {% block pagename %}
+
+        {% endblock %}
+    </pagename>
+
+    <menu>
+        {% block menu %}
+            <a href="/main_page/">Главная</a><br />
+            <a href="/herbs/">Сумка с лекарствами</a><br />
+            <a href="/status/">Текущий статус</a><br />
+        {% endblock %}
+    </menu>
+
+    <content>
+        {% block content %}
+
+        {% endblock %}
+    </content>
+
+</body>
+</html>
