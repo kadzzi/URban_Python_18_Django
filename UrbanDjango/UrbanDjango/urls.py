@@ -17,6 +17,7 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 from task4.views import main_page, herbs_page, status_page
+from task5.views import sign_up_by_html, sign_up_by_django
 
 
 urlpatterns = [
@@ -25,5 +26,9 @@ urlpatterns = [
     # task4
     path('main_page/', main_page),
     path('herbs/', herbs_page),
-    path('status/', status_page)
+    path('status/', status_page),
+
+    # task5
+    path('', sign_up_by_html),
+    path('django_sign_up/', sign_up_by_django)
 ]
